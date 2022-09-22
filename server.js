@@ -7,8 +7,8 @@ app.get("/", function(req, res){
     resText += "Instructions The rest text is diplayed in the paragraph as shown in the screenshot.<br><br>"; 
     resText += "I declare that this test is done on my own work in accordance with seneca academic policy. No part of this test has been copied manually or electronically from any other source.<br><br>"; 
     resText += "Name: Damanjot Singh<br><br>";
-    resText += "Student Number: 148285216";
-    resText += "<a href = './pages/test1.html'> Go to Test 1 </a> <br>"; 
+    resText += "Student Number: 148285216<br><br>";
+    resText += "<a href = './pages/test1.html'> Go to Test 1 </a> <br><br>"; 
     resText += "Instruction test 1 is a link which directs me to test 1 <br>"; 
     res.send(resText);
 });
