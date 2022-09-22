@@ -8,7 +8,8 @@ app.get("/", function(req, res){
     resText += "I declare that this test is done on my own work in accordance with seneca academic policy. No part of this test has been copied manually or electronically from any other source.<br><br>"; 
     resText += "Name: Damanjot Singh<br><br>";
     resText += "Student Number: 148285216<br><br>";
-    resText += "<a href = './pages/test1.html'> Go to Test 1 </a> <br><br>"; 
+    app.get("/test1", function(req, res){
+        res.sendFile(path.join(__dirname, "/pages/test1.html")); 
     resText += "Instruction test 1 is a link which directs me to test 1 <br>"; 
     res.send(resText);
 });
